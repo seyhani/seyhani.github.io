@@ -1,0 +1,152 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{datetime}
+\newcommand{\monthyear}{\monthname[\the\month] \the\year}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+\usepackage{fontawesome5}
+
+\newcommand{\quotes}[1]{\textit{``#1''}}
+
+\newenvironment{jobshort}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+        \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+}
+
+\newenvironment{joblong}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+        \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+        }
+        {
+        \end{itemize}
+    \end{minipage}
+}
+
+\begin{document}
+    \noindent
+    \begin{minipage}[t]{0.50\textwidth} % Reduced width for the name
+    {\Huge \textbf{Amir Seyhani}}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.5\textwidth} % Maximized width for the links
+        \raggedleft
+        \small
+        \href{mailto:seyhani@uwaterloo.ca}{seyhani@uwaterloo.ca}
+        \textbar
+        \hspace{0.05em}
+        \href{tel:+14378684587}{+1(437)868-4587}
+        \textbar
+        \hspace{0.05em}
+        \href{https://github.com/seyhani}{\faGithub}
+        \textbar
+        \hspace{0.05em}
+        \href{https://www.linkedin.com/in/aseyhani}{\faLinkedin}
+        \textbar
+        \hspace{0.05em}
+        \href{https://scholar.google.com/citations?user=D8Dmb1gAAAAJ&hl=en}{\faGraduationCap} \\
+    \end{minipage}
+
+    \pagestyle{empty}
+    \section{Summary}
+    Current network verification researcher and former enterprise-scale software engineer. Proficient in both application- and infrastructure-level development with expertise in SWE practices, including Agile, DevOps, IaaC, CI/CD. Experienced in R\&D of high-performance, low-latency systems. Strong background in mathematics, algorithms, and formal verification. Passionate about architecting \textbf{maintainable}, \textbf{reliable}, and \textbf{large-scale} software systems.
+    
+    \section{Education}
+    \begin{tabularx}{\linewidth}{@{}l X@{}}
+        2024 - Present & Ph.D. in Computer Science, Cheriton School of CS, University of Waterloo   \\ % 91
+        2019 - 2022 & M.Sc. in Software Engineering, School of ECE, University of Tehran  \\ %89.35
+        2014 - 2019 & B.Sc. in Computer Engineering, School of ECE, University of Tehran  \\ %80.04
+    \end{tabularx}
+    
+    \section{Publication}
+    \begin{tabularx}{\linewidth}{@{}l X@{}}
+        \textbf{NSDI'26} &  {
+         \textbf{Seyhani A}, Gupta A, Walker D, Arashloo MT. \textbf{\quotes{Count-Based Abstractions for Performance Verification of Contention Points}}. 23rd USENIX Symposium on Networked Systems Design and Implementation.
+        }
+        \\
+        \textbf{HotNets'24} &  {
+        \textbf{Seyhani A}, Zhao J, Gupta A, Walker D, Arashloo MT.
+        \textbf{\quotes{Buffy: A Formal Language-Based Framework for Network Performance Analysis}}. 23rd ACM Workshop on Hot Topics in Networks.
+        }
+        \\
+    \end{tabularx}
+
+    \section{Work Experience}
+% July 2018 - July 2023
+    \begin{jobshort}{Software Engineer $\rightarrow$ Senior SWE, \href{https://www.linkedin.com/company/radin-bourse/}{Radin Bourse} (Tehran, Iran)}{(part-time) 2018 - 2023}
+        \vspace{-20pt}
+        \begin{itemize}[leftmargin=*, nosep]
+            \item  Designed and developed an ultra-low-latency trading engine for Tehran stock exchange using LMAX Disruptor. Achieving $\sim$ 50k TPS  with ~20 $\mu s$ latency for sequential order processing.
+            \item  Led design and migration of an on-premise/bare-metal stack to an IaaC solution using Ansible, MaaS, Docker, Terraform, Nomad, Vault, and Consul.
+        \end{itemize}
+    \end{jobshort}
+
+% Nov, 2017 - May - 2018
+    \begin{jobshort}{Backend Developer, \href{https://tapsi.ir/en/}{Tapsi} (Tehran, Iran)}{(part-time) 2017 - 2018}
+        Developed and deployed backend features for Tapsi, the second-largest online taxi platform in Iran.
+    \end{jobshort}
+
+% June, 2016, June-2017
+    \begin{jobshort}{Fullstack Developer, chibaki.ir (Tehran, Iran)}{(part-time) 2016 - 2017}
+        Independently designed, developed, and deployed the backend of an online platform for connecting clients to professionals, using Node.js.
+    \end{jobshort}
+
+
+    \section{Notable Projects}
+
+
+    \begin{tabularx}{\linewidth}{ @{}l X@{} }
+        \href{https://github.com/all-things-networking/count-buffy}{Count Buffy} (2026) & Verification framework built on Z3 for checking performance properties of network schedulers, supporting realistic buffer sizes while having efficient verification time.\\
+        \href{https://github.com/seyhani/Estrest}{Estrest} (2022) & A tool for checking actual causality using event-structure semantics of programs.\\
+        \href{https://github.com/UTAP/APHTTP}{APHTTP} (2017) & A light-weight Express.js inspired HTTP web-server and template rendering implemented with pure C++, to enable simple web development with C++. \\
+    \end{tabularx}
+
+    \section{Skills}
+    \begin{tabularx}{\linewidth}{@{}l X@{}}
+        \textbf{Languages} & Java, C++, Python, C, SQL, Javascript \\
+        \textbf{Frameworks \& Libraries} & Spring Frameworks (Boot, Data, Security), JMH, Lombok, Cucumber, Hibernate, Z3, Node.js, NumPy, Pandas, Scikit-learn \\
+        \textbf{Tools \& Technologies} & Ansible, Hazelcast, Maven, Terraform, Packer, Vault, Nomad, Consul, Docker, MySQL, MongoDB, JFR, GitLab CI, NGINX, mCRL2, Linux, Git, AWS, GCP, Prometheus, Grafana \\
+        \textbf{Additional Experience} & Kafka, OpenCV, RabbitMQ, ELK Stack \\
+    \end{tabularx}
+    % Skills:
+    % Java, C++, Python, SQL, Javascript, 
+    % Spring, JMH, Cucumber, Hibernate, Node.js, numpy, pandas
+    % Ansible, Hazelcast, Maven, Terraform, Packer, Vault, Docker, MySQL, CI/CD, NGINX, Linux, Git, Bash, Kafka, ELK
+    \vspace{10pt}
+    \enlargethispage{20pt}
+\end{document}

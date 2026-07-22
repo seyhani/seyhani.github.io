@@ -1,0 +1,90 @@
+body {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+.name-banner{
+    border-bottom: none;
+}
+
+h1 {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.entry {
+    margin-bottom: 2em;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.justify {
+    text-align: left;
+}
+
+.hidden-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.my-pic {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.last-updated {
+    display: block;
+    margin-top: 2%;
+    color: gray;
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-date h3 {
+    margin: 0;
+}
+
+.paper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    font-style: italic;
+    margin-top: 0.5em;
+    display: block;
+}
+
+.authors {
+    font-style: italic;
+    margin-top: 0.5em;
+    display: block;
+}
+
+.bullets {
+    padding-left: 0.5em;
+    margin-left: 0;
+    list-style-position: inside;
+    list-style-type: "-";
+}

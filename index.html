@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir's Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="files/me.jpg" alt="My Picture!" class="my-pic">
+    <h1 class="name-banner">Amir Seyhani</h1>
+    <div>
+        <div style="margin: 1em;">
+            <a href="mailto:seyhani@uwaterloo.ca">
+                <i class="fas fa-envelope"></i>
+                seyhani@uwaterloo.ca
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/aseyhani/">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <span>&bull;</span>
+            <a href="https://github.com/seyhani">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+            <span>&bull;</span>
+            <a href="https://scholar.google.com/citations?user=D8Dmb1gAAAAJ&hl=en">
+                <i class="fas fa-graduation-cap"></i>
+                Google Scholar
+            </a>
+            <span>&bull;</span>
+            <a href="files/Resume.pdf">
+                <i class="fa-solid fa-file-lines"></i>
+                Resume
+            </a>
+        </div>
+    </div>
+    <small class="last-updated">Last updated: December 2025</small>
+</header>
+<main>
+    <section id="about">
+        <h1>
+            <a href="#about" class="hidden-link"> About Me </a>
+        </h1>
+        <p class="justify">
+            I am a second-year <strong> Ph.D. student </strong> researching formal methods for analyzing network
+            performance.
+            Before joining UWaterloo, I was a <strong> senior software engineer </strong> at <a
+                href="https://www.linkedin.com/company/radin-bourse/">Radin Bourse</a>.
+            <br>
+            I am interested in design and development of correct, reliable, maintainable, and efficient software
+            systems.
+            That's why I chose formal methods as my research focus.
+        </p>
+    </section>
+
+    <section id="education">
+        <h1>
+            <a href="#education" class="hidden-link"> Education </a>
+        </h1>
+        <div class="entry">
+            <div class="title-date">
+                <h3>Ph.D. in Computer Science</h3>
+                <span>Jan. 2024 – Present</span>
+            </div>
+            <div>
+                <span class="location">
+                    Cheriton School of Computer Science, University of Waterloo, Canada
+                </span>
+                <p>
+                    <strong>Supervisor</strong>: Mina Tahmasebi Arashloo | <strong>GPA:</strong> 91/100
+                </p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="title-date">
+                <h3>M.Sc. in Software Engineering</h3>
+                <span>Sep. 2019 – Sep. 2022</span>
+            </div>
+            <div>
+                <span class="location">
+                    ECE Department, University of Tehran, Iran
+                </span>
+                <p>
+                    <strong>Thesis:</strong> Explaining Software-Defined Networks Failures using Causal Reasoning
+                    <strong>Supervisor:</strong> Hossein Hojjat, Advisor: MR Mousavi | <strong>GPA:</strong> 89.35/100
+                </p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="title-date">
+                <h3>B.Sc. in Computer Engineering</h3>
+                <span>Sep. 2014 – June 2019</span>
+            </div>
+            <div>
+                <span class="location">
+                    ECE Department, University of Tehran, Iran
+                </span>
+                <p>
+                    <strong>GPA:</strong> 80.40/100
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <h1>
+            <a href="#work-experience" class="hidden-link"> Work Experience </a>
+        </h1>
+
+        <div class="entry">
+            <div class="title-date">
+                <h3>Software Engineer -> Senior Software Engineer</h3>
+                <span>2020 – 2024</span>
+            </div>
+            <div>
+                <span class="location">
+                    <a href="https://www.linkedin.com/company/radin-bourse/">Radin Bourse</a>, Tehran, Iran
+                </span>
+                <p>
+                <ul class="bullets">
+                    <li>
+                        Designed and developed an ultra-low-latency trading engine for tehran stock exchange using
+                        LMAX Disruptor. Achieving ~50k TPS (~20 &mu;s latency) for sequential order
+                        processing.
+                    </li>
+                    <li>
+                        Led design and migration of an on-premise/bare-metal stack to an IaC solution using Ansible,
+                        MaaS, Docker, Terraform, Nomad, Vault, and Consul.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="title-date">
+                <h3>Backend Developer</h3>
+                <span>2017 – 2018</span>
+            </div>
+            <div>
+                <span class="location">
+                    <a href="https://tapsi.ir/en"> Tapsi</a>, Tehran, Iran
+                </span>
+                <p>
+                    Developed and deployed backend features for Tapsi, the second largest online taxi platform in
+                    Iran.
+                </p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="title-date">
+                <h3>Software Developer</h3>
+                <span>2016 – 2017</span>
+            </div>
+            <div>
+                <span class="location">
+                    chibaki.ir, Tehran, Iran
+                </span>
+                <p>
+                    Independently designed, developed, and deployed the backend of an online platform for connecting
+                    clients to professionals, using Node.js. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h1>
+            <a href="#publications" class="hidden-link"> Publications </a>
+        </h1>
+        <div class="paper">
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3696348.3696854">
+                Buffy: A Formal Language-Based Framework for Network Performance Analysis
+            </a>
+            <span>HotNets 24</span>
+        </div>
+        <span class="authors">
+            Seyhani A, Zhao J, Gupta A, Walker D, Arashloo MT.
+        </span>
+    </section>
+
+    <section id="courses">
+        <h1>
+            <a href="#courses" class="hidden-link"> Selected Courses </a>
+        </h1>
+        <p>
+            Advanced Algorithms (100/100), Advanced Computer Mathematics (89/100), Algorithmic Graph Theory (83.5/100),
+            Modeling and Formal Verification of Reactive Systems (92.5/100), Process Algebra and Automata Theory
+            (96.25/100),
+            Software Synthesis (100/100), Software Testing (100/100), Programmable Networks (98/100),
+        </p>
+    </section>
+
+    <section id="awards">
+        <h1>
+            <a href="#awards" class="hidden-link"> Awards & Honors </a>
+        </h1>
+        <ul>
+            <li>Ranked <strong> 3rd </strong>in the nationwide Ph.D. degree entrance exam for the software and
+                algorithms field among more than 1500 participants. (2022)
+            </li>
+            <li>Ranked <strong> 55th </strong>in the nationwide master's degree entrance exam for the software
+                engineering field. (2018)
+            </li>
+            <li>Ranked <strong> 3rd </strong>among Computer Engineering, Information Technology Field Students, ECE
+                Department, University of Tehran. (2017)
+            </li>
+            <li><strong> Direct M.Sc. Admission</strong> from ECE Department, University of Tehran (Exempted from entrance
+                exam
+                as an exceptional-talent student). (2017)
+            </li>
+            <li>Faculty of Engineering (FoE) award as the <strong> third rank </strong>student, University of
+                Tehran. (2015)
+            </li>
+            <li>Semi Finalist in the national Olympiad of Mathematics. (2010-2012)</li>
+            <li>Semi Finalist in the national Olympiad of Informatics. (2011, 2012)</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h1>
+            <a href="#teaching" class="hidden-link"> Teaching Assistant Experience </a>
+        </h1>
+        <ul>
+            <li>Teaching Assistant, <strong>Advanced Algorithms</strong>, University of Tehran (Fall 2021)</li>
+            <li>Head Teaching Assistant, <strong>Software Engineering</strong>, University of Tehran (Spr. 2019)</li>
+            <li>Head Teaching Assistant, <strong>Advanced Programming</strong>, University of Tehran (Spr. 2018)</li>
+            <li>Teaching Assistants Supervisor, <strong>Discrete Mathematics</strong>, University of Tehran (Spr. 2018)
+            </li>
+            <li>Teaching Assistant, <strong>Design and Analysis of Algorithms</strong>, University of Tehran (Fall 2018)
+            </li>
+            <li>Head Teaching Assistant, <strong>Discrete Mathematics</strong>, University of Tehran (Fall 2017)</li>
+            <li>Teaching Assistant, <strong>Advanced Programming</strong>, University of Tehran (2017)</li>
+            <li>Teaching Assistant, <strong> Discrete Mathematics</strong>, University of Tehran (2016-2017)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>
+            <a href="#projects" class="hidden-link"> Notable Projects </a>
+        </h1>
+        <div>
+            <div class="title-date">
+                <h3>Count Buffy</h3>
+                <span>2025</span>
+            </div>
+            <div>
+                <p> Verification framework built on Z3 for checking performance properties of network schedulers,
+                    supporting realistic buffer sizes while having efficient verification time. </p>
+            </div>
+        </div>
+        <div>
+            <div class="title-date">
+                <h3>
+                    <a href="https://github.com/seyhani/Estrest">Estrest</a>
+                </h3>
+                <span>2022</span>
+            </div>
+            <div>
+                <p>A tool for checking actual causality using event-structure semantics of programs.</p>
+            </div>
+        </div>
+        <div>
+            <div class="title-date">
+                <h3>
+                    <a href="https://github.com/UTAP/APHTTP}">APHTTP </a>
+                </h3>
+                <span>2017</span>
+            </div>
+            <div>
+                <p>A simple C++ library for implementing HTTP server in C++ used in the Advanced Programming course as
+                    an
+                    educational asset. (Lead Developer)</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="title-date">
+                <h3>
+                    <a href="https://github.com/seyhani/UT-DMC">
+                        DM Contest
+                    </a>
+                </h3>
+                <span>2016</span>
+            </div>
+            <div>
+                <p>An online platform for holding the end-semester contest of the Discrete Mathematics course. (Lead
+                    Developer)</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="title-date">
+                <h3>Persian OCR</h3>
+                <span>2015</span>
+            </div>
+            <div>
+                <p>Development of the segmentation part of an OCR application for the Persian language using C++ and
+                    OpenCV.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="voluntary">
+        <h1>
+            <a href="#voluntary" class="hidden-link"> Voluntary Experience </a>
+        </h1>
+        <ul>
+            <li>Event Organizer, Winter Web Weeks, ECE Department, University of Tehran. (2018)</li>
+            <li>Supervisor, ACM Student Chapter, ECE Department, University of Tehran. (2018)</li>
+            <li>Project Mentor, Summer of Code, ACM Student Chapter, ECE Department, University
+                of
+                Tehran. (2017)
+            </li>
+            <li>Contest Organizer, Discrete Mathematics Contest, ECE Department, University
+                of
+                Tehran. (2016-2017)
+            </li>
+            <li>Event Organizer, XP Game, ECE Department, University of Tehran. (2016-2017)</li>
+            <li>Membership Chairperson, ACM Student Chapter, ECE Department, University of
+                Tehran. (2015-2016)
+            </li>
+            <li>Guild Council Member of the ECE Department, University of Tehran. (2015)</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h1>
+            <a href="#skills" class="hidden-link"> Skills </a>
+        </h1>
+        <p><strong>Professional In:</strong></p>
+        <ul>
+            <li><strong>Programming Languages:</strong> Java, C++, Python, C, Javascript</li>
+            <li><strong>Frameworks and Libraries:</strong> Spring (Boot, Data, Cloud, Security, AMQP, Web MVC),
+                Hibernate
+                (ORM, Search, Validator), Node.js, NumPy, Pandas
+            </li>
+            <li><strong>Other Tools:</strong> Ansible, Hashicorp products (Consul, Nomad, Packer, Vault), Bash, LaTeX,
+                Docker, Git, MongoDB, MySQL, Linux
+            </li>
+        </ul>
+        <p><strong>Have Experience with:</strong></p>
+        <ul>
+            <li>Z3, Dafny, mCRL2, Spin, R, Kafka, OpenCV, Canonical MaaS, Vagrant, RabbitMQ, Matplotlib, SciPy, Seaborn,
+                scikit-learn, ELK Stack, Gitlab CI/CD, React, Vue, Django, HTML, CSS, Jquery
+            </li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
